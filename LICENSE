@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026  pfuni
+Copyright (c) 2026 SHEIHU (pfuni)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+SHEIHU Launcher
+https://github.com/pfuni/SHEIHU
+
+This project uses the following third-party components:
+
+- Electron (MIT License) - https://github.com/electron/electron
+- minecraft-launcher-core (MIT License) - https://github.com/Pierce01/MinecraftLauncher-core
+- eml-lib (MIT License) - https://github.com/Electron-Minecraft-Launcher/EML-Lib-v2
+
+Minecraft is a trademark of Mojang Studios. This project is not affiliated with
+or endorsed by Mojang Studios or Microsoft Corporation.
