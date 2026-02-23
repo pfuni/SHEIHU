@@ -1,99 +1,98 @@
-# EML Template
+<p align="center">
+  <img src="https://github.com/pfuni/main/raw/refs/heads/main/LOGO_WHITE.svg" alt="SHEIHU" width="200"/>
+</p>
 
-**EML Template is the reference boilerplate for building a modern, fast, and cross-platform Minecraft Launcher.**
+<h1 align="center">SHEIHU Launcher</h1>
 
-Powered by <a href="https://github.com/Electron-Minecraft-Launcher/EML-Lib-v2"><b>EML Lib</b></a> • Configurable via <a href="https://github.com/Electron-Minecraft-Launcher/EML-AdminTool-v2"><b>EML AdminTool</b></a>
+<p align="center">
+  <b>A modern, sleek Minecraft launcher for WynnCast</b>
+</p>
 
-![EML AdminTool](./.github/assets/screenshot.png)
-
-[<p align="center"><img src="https://img.shields.io/badge/Discord-Electron_Minecraft_Launcher-5561e6?&style=for-the-badge">](https://discord.gg/YVB4k6HzAY)
-[<img src="https://img.shields.io/badge/platforms-Win,_Mac,_Lin-0077DA?style=for-the-badge&color=0077DA">](#platforms)
-[<img src="https://img.shields.io/badge/version-1.0.1-orangered?style=for-the-badge&color=orangered">](package.json)</p>
-
-<p>
-<center>
-<a href="https://discord.gg/YVB4k6HzAY">
-  <img src="./.github/assets/gg.png" alt="EML AdminTool Logo" width="300"/>
-</a>
-</center>
+<p align="center">
+  <img src="https://img.shields.io/badge/Minecraft-1.21.11-62B47A?style=for-the-badge&logo=minecraft&logoColor=white" alt="Minecraft Version"/>
+  <img src="https://img.shields.io/badge/Fabric-0.18.4-DBB68A?style=for-the-badge" alt="Fabric Version"/>
+  <img src="https://img.shields.io/badge/Electron-39-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron"/>
+  <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Platform"/>
 </p>
 
 ---
 
-## Introduction
+## ✨ Features
 
-**EML Template** acts as the frontend foundation for the _Electron Minecraft Launcher_ ecosystem. It is a pre-configured **Electron + Vite** application designed to provide the best possible gaming experience.
+- **One-Click Play** — Automatically downloads and installs everything you need
+- **Microsoft Authentication** — Secure login with your Microsoft account
+- **Auto Java Installation** — Downloads Java 21 (Adoptium Temurin) automatically
+- **Fabric Mod Loader** — Pre-configured with Fabric for optimal mod support
+- **WynnCast Modpack** — Automatically installs and updates WynnCast mods
+- **Modern UI** — Clean, dark interface with real-time console output
+- **Smart Memory Management** — Configurable RAM allocation
 
-It is engineered to work in perfect synergy with **EML Lib** (for the core logic) and **EML AdminTool** (for configuration).
+## 🚀 Quick Start
 
-## Features
+1. Download the latest release from [Releases](https://github.com/pfuni/SHEIHU/releases)
+2. Run `SHEIHU-Setup.exe`
+3. Sign in with your Microsoft account
+4. Click **Play WynnCast**
 
-- **Next-Gen Performance**: Built on **Vite**, offering instant startup and Hot-Module-Replacement (HMR).
-- **Microsoft authentication**: Full integration of the official authentication flow via EML Lib.
-- **Asset management**: Smart downloading of game files (Java, libraries, assets, mods) with hash validation, thanks to EML AdminTool.
-- **Auto-update**: Automatic update system linked to your EML AdminTool instance.
+That's it! The launcher handles everything else automatically.
 
-## Installation & Development
+## 🎮 What Gets Installed
 
-### Prerequisites
+| Component | Version | Location |
+|-----------|---------|----------|
+| Java 21 (Temurin) | Latest | `%APPDATA%\.SHEIHU\runtime` |
+| Minecraft | 1.21.11 | `%APPDATA%\.SHEIHU` |
+| Fabric Loader | 0.18.4 | `%APPDATA%\.SHEIHU\versions` |
+| WynnCast Mods | Latest | `%APPDATA%\.SHEIHU\mods` |
 
-Before starting, ensure you have installed:
+## ⚙️ Configuration
 
-- **Node.js** (v18 or higher recommended)
-- **NPM** (or Yarn/Pnpm)
+Access settings via the **gear icon** in the sidebar:
 
-### Setup
+- **RAM Allocation** — Set minimum and maximum memory (default: 2-8 GB)
+- **Game Resolution** — Configure window size
+- **Account Management** — View account info and logout
 
-1.  Clone the repository:
+## 🛠️ Development
 
-    ```bash
-    git clone https://github.com/Electron-Minecraft-Launcher/EML-Template.git
-    cd EML-Template
-    ```
+```bash
+# Clone the repository
+git clone https://github.com/pfuni/SHEIHU.git
+cd SHEIHU
 
-2.  Install dependencies:
+# Install dependencies
+npm install
 
-    ```bash
-    npm install
-    ```
+# Run in development mode
+npm run dev
 
-    _Note: This will automatically install `eml-lib` and build tools._
+# Build for production
+npm run build
 
-3.  Start in Development mode:
+# Create Windows installer
+npm run dist:win
+```
 
-    ```bash
-    npm run dev
-    ```
+## 📁 Project Structure
 
-    An Electron window will open with hot-reloading enabled.
+```
+├── electron/           # Electron main process
+│   ├── main.ts        # App entry point
+│   ├── preload.ts     # Preload scripts
+│   └── handlers/      # IPC handlers
+├── src/               # Renderer process
+│   ├── views/         # UI components
+│   └── static/        # Styles & assets
+├── build/             # App icons
+└── scripts/           # Build scripts
+```
 
-## Configuration
+## 📜 License
 
-### Link to your EML AdminTool instance
+MIT License — see [LICENSE](LICENSE) for details.
 
-Modify the configuration file (`electron/const.ts`) to point to your distribution URL generated by **EML AdminTool**.
+---
 
-### Icon Customization
-
-To change the visual identity, replace the files in the `build/` folder:
-
-- `icon.png`: Standard icon (512x512).
-- `icon.ico`: For Windows.
-- `icon.icns`: For macOS (Legacy & Liquid Glass fallback).
-- `background.png`: DMG Installer background (macOS).
-
-### Build (distribution)
-
-To create the final executables for distribution:
-
-| Platform | Command               | Output format               |
-| -------- | --------------------- | --------------------------- |
-| Windows  | `npm run build:win`   | `.exe` (NSIS Installer)     |
-| macOS    | `npm run build:mac`   | `.dmg` (Disk Image)         |
-| Linux    | `npm run build:linux` | `.AppImage`, `.deb`, `.rpm` |
-
-Compiled files will be located in the `dist/` folder.
-
-## Contributing
-
-Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
+<p align="center">
+  <b>SHEIHU</b> — Play WynnCast with style
+</p>
