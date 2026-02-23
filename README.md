@@ -7,9 +7,6 @@
 <p align="center">
   <b>A modern, sleek Minecraft launcher for WynnCast</b>
 </p>
-<p align="center">
-   [WEBSITE](https://sheihu.eu/)
-</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Minecraft-1.21.11-62B47A?style=for-the-badge&logo=minecraft&logoColor=white" alt="Minecraft Version"/>
@@ -19,7 +16,7 @@
 </p>
 
 ---
-
+[WEBSITE](https://sheihu.eu/)
 ## ✨ Features
 
 - **One-Click Play** — Automatically downloads and installs everything you need
