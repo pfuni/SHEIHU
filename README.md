@@ -8,7 +8,7 @@
   <b>A modern, sleek Minecraft launcher for WynnCast</b>
 </p>
 <p align="center">
-  <b> [WEBSITE](https://sheihu.eu/) </b>
+   [WEBSITE](https://sheihu.eu/)
 </p>
 
 <p align="center">
