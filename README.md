@@ -45,7 +45,7 @@ That's it! The launcher handles everything else automatically.
 | Fabric Loader | 0.18.4 | `%APPDATA%\.SHEIHU\versions` |
 | WynnCast Mods | Latest | `%APPDATA%\.SHEIHU\mods` |
 
-## ⚙️ Configuration
+## Configuration
 
 Access settings via the **gear icon** in the sidebar:
 
