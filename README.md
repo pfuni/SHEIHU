@@ -94,5 +94,5 @@ MIT License — see [LICENSE](LICENSE) for details.
 ---
 
 <p align="center">
-  <b>SHEIHU</b> — Play WynnCast with style
+  <b>SHEIHU</b> — Play Wynncraft with QOL
 </p>
