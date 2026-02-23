@@ -1,0 +1,23 @@
+:root {
+  /* Colors - Modern Dark with Purple Accent */
+  --primary: #a78bfa;
+  --primary-hover: #c4b5fd;
+
+  --bg-dark: #0a0a0a;
+  --text-main: #ffffff;
+  --text-muted: #666666;
+
+  /* Glassmorphism - Minimal */
+  --glass-bg: rgba(15, 15, 15, 0.9);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-blur: 16px;
+
+  /* Shadows */
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.6);
+
+  /* Layout */
+  --sidebar-width: 200px;
+
+  /* UI System */
+  --btn-radius: 8px;
+}

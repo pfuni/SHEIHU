@@ -1,0 +1,132 @@
+{
+  "name": "sheihu-launcher",
+  "productName": "SHEIHU",
+  "author": "pfuni",
+  "description": "SHEIHU Launcher",
+  "private": true,
+  "version": "1.0.2",
+  "license": "MIT",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "postinstall": "node scripts/patch-eml-lib.js",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "dist:lin": "npm run build && electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.sheihu.launcher",
+    "productName": "SHEIHU",
+    "copyright": "Copyright © 2026 SHEIHU",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "dist-electron/**/*",
+      "package.json",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}"
+    ],
+    "publish": {
+      "provider": "generic",
+      "url": "https://emlproject.qzz.io/"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico",
+      "legalTrademarks": "SHEIHU"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "SHEIHU",
+      "deleteAppDataOnUninstall": true,
+      "artifactName": "${productName}-Setup-${version}.${ext}",
+      "uninstallDisplayName": "SHEIHU Uninstaller"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.games",
+      "icon": "build/icon.icns",
+      "darkModeSupport": true,
+      "identity": null,
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist",
+      "artifactName": "${productName}-${version}.${ext}"
+    },
+    "dmg": {
+      "background": "build/background.png",
+      "icon": "build/dmg-icon.icns",
+      "iconSize": 100,
+      "contents": [
+        {
+          "x": 130,
+          "y": 190
+        },
+        {
+          "x": 410,
+          "y": 190,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 540,
+        "height": 430
+      }
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm"
+      ],
+      "icon": "build/icon.png",
+      "category": "Game",
+      "description": "SHEIHU Launcher",
+      "artifactName": "${productName}-${version}.${ext}"
+    }
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/dompurify": "^3.0.5",
+    "electron": "^39.2.6",
+    "electron-builder": "^26.0.12",
+    "prettier": "^3.7.4",
+    "sass-embedded": "^1.95.1",
+    "sharp": "^0.34.5",
+    "to-ico": "^1.1.5",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-electron": "^0.29.0"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "dompurify": "^3.3.1",
+    "electron-updater": "^6.6.2",
+    "eml-lib": "^2.0.0-beta.10",
+    "marked": "^17.0.1",
+    "node-fetch": "^2.7.0"
+  }
+}
