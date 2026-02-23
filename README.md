@@ -17,7 +17,7 @@
 
 ---
 [WEBSITE](https://sheihu.eu/)
-## ✨ Features
+## Features
 
 - **One-Click Play** — Automatically downloads and installs everything you need
 - **Microsoft Authentication** — Secure login with your Microsoft account
@@ -27,7 +27,7 @@
 - **Modern UI** — Clean, dark interface with real-time console output
 - **Smart Memory Management** — Configurable RAM allocation
 
-## 🚀 Quick Start
+## Quick Start
 
 1. Download the latest release from [Releases](https://github.com/pfuni/SHEIHU/releases)
 2. Run `SHEIHU-Setup.exe`
@@ -36,7 +36,7 @@
 
 That's it! The launcher handles everything else automatically.
 
-## 🎮 What Gets Installed
+## What Gets Installed
 
 | Component | Version | Location |
 |-----------|---------|----------|
@@ -53,7 +53,7 @@ Access settings via the **gear icon** in the sidebar:
 - **Game Resolution** — Configure window size
 - **Account Management** — View account info and logout
 
-## 🛠️ Development
+## Development
 
 ```bash
 # Clone the repository
@@ -73,7 +73,7 @@ npm run build
 npm run dist:win
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── electron/           # Electron main process
@@ -87,7 +87,7 @@ npm run dist:win
 └── scripts/           # Build scripts
 ```
 
-## 📜 License
+## License
 
 MIT License — see [LICENSE](LICENSE) for details.
 
