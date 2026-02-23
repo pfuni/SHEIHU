@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 882.33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: DimitriSwank, 'Dimitri Swank';
+        font-size: 692.3px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="145" y="106.33" width="655" height="504"/>
+  <rect class="cls-1" x="412" y="575.33" width="191" height="110"/>
+  <rect class="cls-1" x="28" y="269.33" width="179" height="361"/>
+  <rect class="cls-1" x="46" y="240.33" width="159" height="123"/>
+  <rect class="cls-1" x="72" y="210.33" width="147" height="114"/>
+  <rect class="cls-1" x="88" y="171.33" width="138" height="104"/>
+  <rect class="cls-1" x="117.5" y="136.33" width="111.75" height="111.75"/>
+  <text class="cls-2" transform="translate(18.51 604.03) scale(1.03 1)"><tspan x="0" y="0">sh</tspan></text>
+  <rect class="cls-3" y="452.33" width="46" height="137"/>
+</svg>

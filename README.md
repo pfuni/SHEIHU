@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/pfuni/main/raw/refs/heads/main/LOGO_WHITE.svg" alt="SHEIHU" width="200"/>
+  <img src="./src/static/images/LOGO_WHITE.svg" alt="SHEIHU" width="200"/>
 </p>
 
 <h1 align="center">SHEIHU Launcher</h1>

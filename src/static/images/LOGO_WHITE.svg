@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1979.72 837.71">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: DimitriSwank, 'Dimitri Swank';
+        font-size: 657.29px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="0" y="395.77" width="39.89" height="120.1"/>
+  <rect class="cls-1" x="962.89" y="296.87" width="116" height="144"/>
+  <text class="cls-2" transform="translate(17.08 573.48)"><tspan x="0" y="0">SHEIHU</tspan></text>
+</svg>
