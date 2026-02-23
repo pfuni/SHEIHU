@@ -7,6 +7,9 @@
 <p align="center">
   <b>A modern, sleek Minecraft launcher for WynnCast</b>
 </p>
+<p align="center">
+  <b>[WEBSITE](https://sheihu.eu/}/b>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Minecraft-1.21.11-62B47A?style=for-the-badge&logo=minecraft&logoColor=white" alt="Minecraft Version"/>
