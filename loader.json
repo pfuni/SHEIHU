@@ -1,17 +1,23 @@
 [
   {
+    "name": "WynnCast",
     "minecraft_version": "1.21.11",
     "mod_version": "0.18.4",
-    "url": "https://github.com/SheihuGit/WynnCast/raw/refs/heads/main/WynnCast.zip"
+    "modpack_url": "https://github.com/SheihuGit/WynnCast/raw/refs/heads/main/WynnCast.zip",
+    "icon_url": "https://github.com/pfuni/SHEIHU/blob/main/src/static/images/wynncast.png"
   },
   {
+    "name": "WynnCast Legacy",
     "minecraft_version": "1.21.4",
     "mod_version": "0.16.9",
-    "url": null
+    "modpack_url": null,
+    "icon_url": "https://github.com/pfuni/SHEIHU/blob/main/src/static/images/wynncast.png"
   },
   {
+    "name": "WynnCast Older",
     "minecraft_version": "1.21.11",
     "mod_version": "0.16.9",
-    "url": null
+    "modpack_url": null,
+    "icon_url": "https://github.com/pfuni/SHEIHU/blob/main/src/static/images/wynncast.png"
   }
 ]
